@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>My portfolio</title>
+      <link rel="stylesheet" href="portfolio.css">
+      <script src="https://kit.fontawesome.com/e008f1dabf.js" crossorigin="anonymous"></script>
+  </head>
+    <body>
+    <div id="header">
+       <div class="container">
+          <nav>
+            <img src="images/san.svg" class="logo" width="20%" height="20%">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#services">My Services</a></li>
+              <li><a href="#portfolio">My Projects</a></li>
+              <li><a href="#contact">Contact me</a></li>
+    
+            </ul>
+          </nav>
+          
+          <div class="header-text">
+            <h1>Hello, I'm <span>Sandra Nyam</span></h1>
+            <p>I'm an apprendee <span>Web Designer</span> with a Business background.
+             <br> I'm passionate about User research, Design and Front-end Development</p>
+          </div>   
+       </div>
+    </div>
+    <!-------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abput-col-1">
+                    <img src="images/_-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="description-text">Hi👋🏾 I'm sandra! Welcome to my world 🤗🌺
+                      <br>I am a student Bac + 5 in Digital Management at ICN business school. 
+                      <br>I have studied for 4 years in Italy at the prestigious University of Bologna.
+                      <br>I am passionate about digital transformation and innovation 👩🏾‍💻
+                      <br>Currently, Alongside my studies, I am training online in UX/UI Design and 
+                      <br>I would also like to develop skills in Coding in order to participate in the 
+                      <br>conception of webproducts.
+                      <br>I am creative, empathetic and very very friendly🤪</p>
+
+                      <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                          <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                          <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                          <ul>
+                              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                              <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                             <li><span>Digital Marketing</span><br>Designing Web/App interfaces</li>
+                          </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                           <li><span>November 2022 - Current</span><br>Digital project manager</li>
+                           <li><span>May 2022 - Agust 2022</span><br>Product Owner Assistant</li>
+                           <li><span>Jan 2022 - April 2022</span><br>Social Media Manager</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                      <ul>
+                         <li><span>2022 - 2023</span><br>Icn Business School</li>
+                         <li><span>Jan 2022</span><br>Start2impact University</li>
+                         <li><span>2018 - 2021</span><br>University of Bologna</li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Development</h2>
+                    <p>I am an a Front-end developpement apprendice. <br>I'm learning by myself languages like html/css, Js, Php. 
+                       <br>I'm also learning about No-code tools like Bubble o Weweb. 
+                    </p>
+                   
+                </div>
+                <div>
+                  <i class="fa-solid fa-crop-simple"></i>
+                  <h2>UI/UX Design</h2>
+                  <p>My passion for UX started a year ago when I decided 
+                    <br>to train myself online. 
+                    <br>I see design as a way to improve interfaces, to make them more fluid and more 
+                    respectful of the environment.
+               
+              </div>
+              <div>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h2>Digital Marketing</h2>
+                <p>
+                  I had the opportunity during my internship experiences to work on the digital brand strategy. 
+                  Notably on the redesign of the website and communication on social networks</p>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+ <!------------portfolio------------- -->
+
+  <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" onclick="urlbeautyhair.ml">
+                    <img src="images/Beauty hair Website (1).png">
+                    <div class="layer">
+                      <h3>Creation of an e-commerce Website</h3>
+                      <p>E-commerce shop for hair products. Front development 
+                        practice with the use of HTML CSS 
+                      </p>
+                      <a href="https://beautyhair.ml//" target="_blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                  <img src="images/3.png">
+                  <div class="layer">
+                    <h3>My portfolio</h3>
+                    <p>This portfolio that you are exploring
+                      Code by using HTML and CSS
+                    </p>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                  <h3>Yesstyle</h3>
+                  <p>Light Figma mobile mockups / Rebranding idea and improvement 
+                    of the yesstyle website
+                  </p>
+                  <a href="https://www.figma.com/proto/GPQQuNr6DXm9JJxz7I3gvK/Maquette-Yesstyle?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2" target="_blanck"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+      </div>
+  </div>
+
+<!------------contact------------- -->
+
+<div id="contact">
+    <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> Contact@example.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>+330768371042</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <a href="images/SANDRANYAM-CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn3">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+    </div>
+    <div class="copyright">copyright @sandra nyam. Made by me</div>
+</div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+     
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+          }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+      }
+     
+     </script>
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwNCIzI6sT1terNowSVt557vHz_c97KH97wq_dqXzHF69sNXg_wveBVOQ0uA5H1jgdBWw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+             msg.innerHTML = "Message sent succesfully"
+             setTimeout(function(){
+              msg.innerHTML = ""
+             },5000)
+             form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    </body>
+</html>
+
