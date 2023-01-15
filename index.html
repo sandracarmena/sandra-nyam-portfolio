@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-compatible" content="IE-edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <title>My portfolio</title>
       <link rel="stylesheet" href="portfolio.css">
@@ -20,34 +20,59 @@
               <li><a href="#services">My Services</a></li>
               <li><a href="#portfolio">My Projects</a></li>
               <li><a href="#contact">Contact me</a></li>
-    
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
           </nav>
+          </div>
+        </div>
           
-          <div class="header-text">
-            <h1>Hello, I'm <span>Sandra Nyam</span></h1>
-            <p>I'm an apprendee <span>Web Designer</span> with a Business background.
-             <br> I'm passionate about User research, Design and Front-end Development</p>
-          </div>   
-       </div>
-    </div>
+        
+          
+          <div id="header-description">
+            <div class="header-container">
+                <div class="header-row">
+                  <div class="header-col-2">
+                    <h1>Hello, I'm <span>Sandra Nyam</span></h1>
+                      <p class="header-text">I'm an apprendee <span>Web Designer</span> with a Business background.
+                        <br> I'm passionate about User research, Design and Front-end Development</p>
+            
+                          <div class="social-icons">
+                            <a href="https://github.com/sandracarmena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                              <a href="https://www.instagram.com/carmena_nyam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                              <a href="https://www.linkedin.com/in/sandra-nyam-069437201/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                          </div>
+                          <div class="header-btn">
+                            <a href="images/SANDRANYAM-CV.pdf" download class="btn btn2">Download CV</a>
+
+                          </div>
+                      </div>
+                    <div class="header-col-1">
+                        <img src="images/HEAD.png">
+                    </div>
+                  
+                </div>
+              </div>
+          </div>
+        
+   
     <!-------------------about------------------- -->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="abput-col-1">
+                <div class="about-col-1">
                     <img src="images/about.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
                     <p class="description-text">Hi👋🏾 I'm sandra! Welcome to my world 🤗🌺
-                      <br>I am a student Bac + 5 in Digital Management at ICN business school. 
-                      <br>I have studied for 4 years in Italy at the prestigious University of Bologna.
-                      <br>I am passionate about digital transformation and innovation 👩🏾‍💻
-                      <br>Currently, Alongside my studies, I am training online in UX/UI Design and 
-                      <br> Front-end development in order make alive the products 
-                      <br>that i personally design.
-                      <br>I am creative, empathetic and very very friendly🤪</p>
+                     <br>I am a student Bac + 5 in Digital Management at ICN business school. 
+                     <br>I have studied for 4 years in Italy at the prestigious University of Bologna.
+                    <br>I am passionate about digital transformation and innovation 👩🏾‍💻
+                    <br>Currently, Alongside my studies, I am training online in UX/UI Design and 
+                    <br>Front-end development in order make alive the products 
+                    <br>that i personally design.
+                    <br>I am creative, empathetic and very very friendly🤪</p>
 
                       <div class="tab-titles">
                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -140,7 +165,7 @@
                 </div>
               </div>
               <div class="work">
-                <img src="./images/about.png">
+                <img src="./images/2.png">
                 <div class="layer">
                   <h3>Yesstyle</h3>
                   <p>Light Figma mobile mockups / Rebranding idea and improvement 
@@ -201,24 +226,41 @@
       }
      
      </script>
-     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwNCIzI6sT1terNowSVt557vHz_c97KH97wq_dqXzHF69sNXg_wveBVOQ0uA5H1jgdBWw/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg= document.getElementById("msg")
     
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-             msg.innerHTML = "Message sent succesfully"
-             setTimeout(function(){
-              msg.innerHTML = ""
-             },5000)
-             form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
+
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0"
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px"
+      }
+
+
     </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwqNZwLWOlO3bX2jVSBgb_mCYluT6ttwB27ONjQGMl31AfpDL9bC1lkzey2L8pUxx4/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succesfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
     </body>
 </html>
 

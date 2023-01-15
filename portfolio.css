@@ -15,8 +15,6 @@ body {
 }
 #header {
   width: 100%;
-  height: 100vh;
-  background-image: url(images/k.png);
   background-size: cover;
   background-position: right;
 }
@@ -60,28 +58,53 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.header-text {
+
+#header-description{
+  margin: 40px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-col-1{
+  flex-basis: 45%;
+}
+.header-col-1 img {
+  width: 100%;
+  
+}
+.header-col-2{
+  flex-basis: 55%;
+}
+.header-col-2 p{
+  line-height: 22px;
+}
+.header-col-2 {
   margin-top: 20%;
   font-size: 30px;
-
-
 }
-.header-text h1 {
+.header-col-2 h1 {
   font-size: 50px;
   margin-bottom: 20px;
 }
-.header-text h1 span {
+.header-col-2 h1 span {
   color: #e83b68;
 }
-.header-text p {
+.header-col-2 p {
 font-size: 18px;
 color: rgb(71, 70, 70);
+margin-top: 0;
 }
-.header-text p span {
+.header-col-2 p span {
 font-weight: 700;
 
 }
 
+.header-btn a{
+  font-size: 14px;
+}
 /* ---------about-------*/
 #about {
   padding: 80px,0;
@@ -368,3 +391,144 @@ form input, form textarea{
 }
 
 /*---------------------css for small screens----------------*/
+
+nav .fa-solid{
+  display: none;
+}
+@media only screen and (min-width: 321px) and (max-width: 600px){
+  body{
+    overflow-x: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+ 
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-col-1 img{
+    width: 70%;
+  }
+  .header-col-1 img{
+    display: none;
+  }
+  .header-col-1, .header-col-2{
+    flex-basis: 100%;
+  }
+  .header-col-1{
+    margin-bottom: 30px;
+  }
+  
+  .header-col-2 h1{
+    font-size: 30px;
+
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #e83b68;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    color: white;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul i{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+ 
+  }
+ 
+
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1 img{
+    width: 70%;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1 img{ 
+    margin-bottom: 20px;
+  }
+  .about-col-2{
+   margin: 20px;
+  }
+  .description-text{
+    font-size: 15px;
+  
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  #services{
+    margin: 20px;
+  }
+  #portfolio{
+    margin: 20px;
+  }
+  .contact-left, .contact-right{
+
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+  #header a {
+    color: rgb(255, 255, 255);
+  }
+ 
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #e83b68;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    color: white;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul i{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+ 
+  }
+  #header a {
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact-left, .contact-right{
+
+    flex-basis: 100%;
+  }
+}
