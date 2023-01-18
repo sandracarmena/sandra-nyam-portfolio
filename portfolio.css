@@ -63,6 +63,7 @@ nav ul li a:hover::after {
   margin: 40px;
 }
 
+
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -531,4 +532,6 @@ nav .fa-solid{
 
     flex-basis: 100%;
   }
+ 
+  
 }
