@@ -4,25 +4,31 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-compatible" content="IE-edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+      <meta property="og:title" content="Sandra Nyam Portfolio Website" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://imagizer.imageshack.com/img923/2089/SWGJwx.png"/>
+      <meta property=”og:description” content="Here you can find all my projects" has launched its Carplay...” />
+      <meta property=”og:url” content=”https://sandracarmena.github.io/sandra-nyam-portfolio/ />
       <title>My portfolio</title>
       <link rel="stylesheet" href="portfolio.css">
       <script src="https://kit.fontawesome.com/e008f1dabf.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
     <body>
     <div id="header">
        <div class="container">
           <nav>
-            <img src="images/san.svg" class="logo" width="20%" height="20%">
+            <img src="images/san.svg" class="logo" alt="sandra logo">
             <ul id="sidemenu">
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About me</a></li>
               <li><a href="#services">My Services</a></li>
               <li><a href="#portfolio">My Projects</a></li>
               <li><a href="#contact">Contact me</a></li>
-              <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+              <i class="fa-solid fa-xmark"></i> 
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-solid fa-bars"></i>
           </nav>
           </div>
         </div>
@@ -42,13 +48,14 @@
                               <a href="https://www.instagram.com/carmena_nyam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                               <a href="https://www.linkedin.com/in/sandra-nyam-069437201/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                           </div>
-                          <div class="header-btn">
-                            <a href="images/Sandra Nyam resume.pdf" download class="btn btn2">Download CV</a>
+                          <div class="header-button">
+                            <a href="images/Sandra Nyam resume.pdf" download class="btn2">Download CV</a>
 
                           </div>
+                    
                       </div>
                     <div class="header-col-1">
-                        <img src="images/HEAD.png">
+                        <img src="images/HEAD.png" alt="sandra principal picture">
                     </div>
                   
                 </div>
@@ -61,7 +68,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/about.png">
+                    <img src="images/about.png" alt="sandra picture">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
@@ -82,8 +89,8 @@
                       <div class="tab-contents active-tab" id="skills">
                           <ul>
                               <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                              <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-                             <li><span>Digital Marketing</span><br>Designing Web/App interfaces</li>
+                              <li><span>Web Development</span><br>Actually learning front-end development HTML5 CSS3 JAVASCRIPT REACT</li>
+                             <li><span>Digital Marketing</span><br>Supporting companies in managing their digital strategy</li>
                           </ul>
                       </div>
                       <div class="tab-contents" id="experience">
@@ -112,8 +119,11 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Front-end Development</h2>
-                    <p>I am an a Front-end developpement apprendice. <br>I'm learning on <span><a href="https://www.start2impact.it" target="_blank">Start2impact</a></span> HTML CSS JAVASCRIPT and frameworks like React , Angular...
-                       <br>I'm also learning about No-code tools like Bubble, Wix, Outsystems o Weweb. 
+                    <p>
+                      I am an a Front-end developpement apprendice
+                      <br>I'm learning on <a href="https://www.start2impact.it" target="_blank">Start2impact</a> 
+                      HTML CSS JAVASCRIPT and frameworks like React , Angular...
+                      <br>I'm also learning about No-code tools like Bubble, Wix, Outsystems o Weweb. 
                     </p>
                    
                 </div>
@@ -145,7 +155,7 @@
           <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work" onclick="urlbeautyhair.ml">
-                    <img src="images/Beauty hair Website (1).png">
+                    <img src="images/Beauty hair Website (1).png" alt="beauty hair website picture">
                     <div class="layer">
                       <h3>Creation of an e-commerce Website</h3>
                       <p>E-commerce shop for hair products. Front development 
@@ -156,7 +166,7 @@
                     </div>
                 </div>
                 <div class="work">
-                  <img src="images/3.png">
+                  <img src="images/3.png" alt="portfolio picture">
                   <div class="layer">
                     <h3>My portfolio</h3>
                     <p>This portfolio that you are exploring
@@ -165,7 +175,7 @@
                 </div>
               </div>
               <div class="work">
-                <img src="./images/2.png">
+                <img src="./images/2.png" alt="Yesstyle website picture">
                 <div class="layer">
                   <h3>Yesstyle</h3>
                   <p>Light Figma mobile mockups / Rebranding idea and improvement 
@@ -175,8 +185,17 @@
               </div>
             </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <button id="btn-work">See more</button>  
+            
+            <p id="message">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters"></span>
+              </span>
+            </p>
+            
       </div>
+
   </div>
 
 <!------------contact------------- -->
@@ -193,14 +212,14 @@
                   <a href="https://www.instagram.com/carmena_nyam/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   <a href="https://www.linkedin.com/in/sandra-nyam-069437201/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
-              <a href="images/Sandra Nyam resume.pdf" download class="btn btn2">Download CV</a>
+              <a href="images/Sandra Nyam resume.pdf" download class="btn2">Download CV</a>
           </div>
           <div class="contact-right">
               <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn3">Submit</button>
+                <button type="submit" class="btn3">Submit</button>
               </form>
               <span id="msg"></span>
           </div>
@@ -209,58 +228,8 @@
     <div class="copyright">copyright @sandra nyam. Made by me</div>
 </div>
 
-    <script>
+<script src="script.js"></script>
 
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-     
-      function opentab(tabname){
-          for(tablink of tablinks){
-              tablink.classList.remove("active-link");
-          }
-          for(tabcontent of tabcontents){
-         tabcontent.classList.remove("active-tab");
-          }
-       event.currentTarget.classList.add("active-link");
-       document.getElementById(tabname).classList.add("active-tab");
-      }
-     
-     </script>
-    
-
-
-    <script>
-
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu(){
-        sidemenu.style.right = "0"
-      }
-      function closemenu(){
-        sidemenu.style.right = "-200px"
-      }
-
-
-    </script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwqNZwLWOlO3bX2jVSBgb_mCYluT6ttwB27ONjQGMl31AfpDL9bC1lkzey2L8pUxx4/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent succesfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-    </body>
+  </body>
 </html>
 

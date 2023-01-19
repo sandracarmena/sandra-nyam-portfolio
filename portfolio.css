@@ -103,7 +103,7 @@ font-weight: 700;
 
 }
 
-.header-btn a{
+.header-button a{
   font-size: 14px;
 }
 /* ---------about-------*/
@@ -233,6 +233,7 @@ font-weight: 700;
 }
 
 
+
 /*-----------portfolio--------- */
 
 #portfolio{
@@ -301,7 +302,7 @@ font-weight: 700;
 .work:hover .layer{
   height: 100%;
 }
-.btn{
+#btn-work{
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -310,12 +311,18 @@ font-weight: 700;
   border-radius: 6px;
   text-decoration: none;
   color: rgb(32, 32, 32);
+  background: transparent;
   transition: background 0.5s;
 
 }
-.btn:hover {
+#btn-work:hover {
   background: #e83b68;
   color: white;
+}
+#message{
+  text-align: center;
+  display: block;
+  font-size: 22px;
 }
 
 /*-----------contact--------- */
@@ -350,17 +357,31 @@ font-weight: 700;
   color: #e83b68;
   transform: translateY(-5px);
 }
-.btn.btn2{
-  display: inline-block;
+.btn2{
   background: #e83b68;
   color: white;
-}
-.btn.btn3{
-  display: inline-block;
-  background: #e83b68;
-  border: none;
-  color: white;
+  display: block;
+  margin-top: 30px;
+  width: fit-content;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
   cursor: pointer;
+}
+.btn2:hover{
+  background-color: #c94064;
+}
+.btn3{
+  background: #e83b68;
+  color: white;
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
 .contact-right form{
   width: 100%;
@@ -427,7 +448,10 @@ nav .fa-solid{
   nav .fa-solid{
     display: block;
     font-size: 25px;
-  }
+    filter: drop-shadow(5px 5px 5px rgb(186, 186, 186));
+    cursor: pointer;
+    }
+    
   nav ul {
     background: #e83b68;
     position: fixed;
@@ -480,13 +504,33 @@ nav .fa-solid{
   #services{
     margin: 20px;
   }
+  #services.container{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #portfolio{
     margin: 20px;
   }
-  .contact-left, .contact-right{
 
+#portfolio.container{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #message{
+    text-align: center;
+    display: block;
+    font-size: 18px;
+  }
+  
+  .contact-left, .contact-right{
+    margin: 20px;
     flex-basis: 100%;
   }
+ 
+  
+ 
   .copyright{
     font-size: 14px;
   }
@@ -496,10 +540,14 @@ nav .fa-solid{
  
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px){
+ 
   nav .fa-solid{
     display: block;
     font-size: 25px;
+    filter: drop-shadow(5px 5px 5px rgb(186, 186, 186));
+    cursor: pointer;
   }
+ 
   nav ul {
     background: #e83b68;
     position: fixed;
@@ -522,6 +570,7 @@ nav .fa-solid{
     top: 25px;
     left: 25px;
     cursor: pointer;
+
  
   }
   #header a {
@@ -529,9 +578,11 @@ nav .fa-solid{
   }
   
   .contact-left, .contact-right{
-
+    margin: 20px;
     flex-basis: 100%;
   }
+ 
+  
  
   
 }
