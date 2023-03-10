@@ -302,6 +302,10 @@ font-weight: 700;
 .work:hover .layer{
   height: 100%;
 }
+.work-subtitle{
+  margin-bottom: 20px;
+  font-weight: 800;
+}
 #btn-work{
   display: block;
   margin: 50px auto;
